@@ -1,0 +1,64 @@
+.all-realizations-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 0.5%;
+    margin: 10px 10px 380px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    .all-realizations-grid {
+        display: grid;
+        grid-template-columns: 49.5% 49.5%;
+        row-gap: 0.5%;
+        column-gap: 1%;
+        margin: 40px 40px 100px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .all-realizations-grid {
+        display: grid;
+        grid-template-columns: 32.5% 32.5% 32.5%;
+        row-gap: 0.5%;
+        column-gap: 1%;
+        margin: 40px 40px 60px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1199px) {
+    .all-realizations-grid {
+        display: grid;
+        grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+        row-gap: 0.5%;
+        column-gap: 1%;
+        margin: 40px;
+        width: 100%;
+    }
+}
+
+.realization-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 1fr [col2-end];
+    grid-template-rows: [row1-start] 50px [row2-start] 1fr [row2-end];
+    background-color: #dbdad9;
+    height: 400px;
+}
+
+.realization-grid-image {
+    grid-column: col1-start;
+    grid-row: row2-start;
+    margin: 10px;
+}
+
+.realization-grid-place {
+    grid-column: col1-start;
+    grid-row: row1-start / row2-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: Roboto,sans-serif;
+}
